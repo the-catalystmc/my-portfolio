@@ -1,4 +1,5 @@
 import '../scss/style.scss';
+import navbar from './navbar';
 
 // function component() {
 //     const element = document.createElement('div');
@@ -12,3 +13,7 @@ import '../scss/style.scss';
 //   }
   
 //   document.body.appendChild(component());
+
+window.addEventListener('load', () => {
+    navbar.toggleMenu();
+})
