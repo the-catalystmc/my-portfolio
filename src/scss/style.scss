@@ -1,8 +1,4 @@
-@import 'custom';
+@import './custom';
+@import './reset';
+@import './navbar';
 @import '~bootstrap/scss/bootstrap';
-
-$body-color: red;
-
-body {
-  background-color: $body-color;
-}
