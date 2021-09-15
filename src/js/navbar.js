@@ -1,17 +1,25 @@
 class Navbar {
+    isMenuOpen = false;
     burgerButton = document.querySelector(".burger");
     menu = document.querySelector('.pop-menu');
+    closeButton = document.querySelector('.close-button');
 
     toggleMenu = () => {
-        let isMenuOpen = false;
         this.burgerButton.addEventListener('click', () => {
-            if(!isMenuOpen){
-            this.menu.style.display = 'block';
-            isMenuOpen = true;
-        } else {
+            if (!this.isMenuOpen) {
+                this.menu.style.display = 'block';
+                this.isMenuOpen = true;
+            } else {
+                this.menu.style.display = 'none';
+                this.isMenuOpen = false;
+            }
+        })
+    }
+
+    closeMenu = () => {
+        this.closeButton.addEventListener('click', () => {
             this.menu.style.display = 'none';
-            isMenuOpen = false;
-        }
+            this.isMenuOpen = false;
         })
     }
 }

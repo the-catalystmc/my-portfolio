@@ -16,4 +16,5 @@ import navbar from './navbar';
 
 window.addEventListener('load', () => {
     navbar.toggleMenu();
+    navbar.closeMenu();
 })
