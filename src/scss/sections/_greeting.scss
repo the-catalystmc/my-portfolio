@@ -1,12 +1,8 @@
-.greeting {
-    padding: 0 10px;
-}
-
 .showcase::after {
     content: '';
     height: 50vh;
     width: 100%;
-    background-image: url("../../images/homeimage.jpg");
+    background-image: url("https://image.ibb.co/gzOBup/showcase.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -21,31 +17,77 @@
     -webkit-filter: blur(0px);
   }
 
-  .showcase:hover .content {
+  .showcase:hover .title {
     filter: blur(2px);
     -webkit-filter: blur(2px);
   }
 
+  .showcase:hover .text {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    background: none;
+  }
+
+  .showcase:hover .sociala {
+    background-color: rgba($color: $black, $alpha: 1.0);
+    padding: 5px;
+    border-radius: 8px;
+  }
+
   .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
     position: absolute;
     z-index: 1;
     top: 10%;
     // left: 50%;
-    margin-top: 105px;
+    // margin-top: 105px;
     // margin-left: -145px;
     // width: 300px;
-    // height: 350px;
-    // text-align: center;
+    height: 350px;
+    text-align: center;
     transition: all 1000ms;
 
     .title {
         font-size: 40px;
         font-weight: 700;
         width: 100%;
+        margin-bottom: 10px;
+
     }
 
     .text {
         font-size: large;
         font-weight: 400;
+        background-color: rgba($color: $black, $alpha: 0.5);
+        margin-bottom: 20px;
+        // display: none;
     }
+  }
+
+  .sociala {
+    text-align: center;
+  }
+
+  .connect {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    // margin: 0 0 10px 0;
+  }
+
+  .sociala ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .sociala ul li a {
+color: $white;
   }
