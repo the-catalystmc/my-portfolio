@@ -1,11 +1,18 @@
 class Navbar {
     burgerButton = document.querySelector(".burger");
+    menu = document.querySelector('.pop-menu');
 
     toggleMenu = () => {
+        let isMenuOpen = false;
         this.burgerButton.addEventListener('click', () => {
-            console.log('yes')
+            if(!isMenuOpen){
+            this.menu.style.display = 'block';
+            isMenuOpen = true;
+        } else {
+            this.menu.style.display = 'none';
+            isMenuOpen = false;
+        }
         })
-        console.log(this.burgerButton)
     }
 }
 
