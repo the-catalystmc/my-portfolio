@@ -3,6 +3,7 @@
 .mobile-navbar {
   align-items: center;
   background-color: $black;
+  color: $white;
   display: flex;
   justify-content: space-between;
   padding: 10px;
@@ -12,4 +13,13 @@
 .mobile-navbar a {
   text-decoration: none;
   color: $white;
+}
+
+.mobile-navbar i {
+  color: $white;
+}
+
+.logo-image {
+  font-size: larger;
+  font-weight: 700;
 }
