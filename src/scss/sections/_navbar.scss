@@ -28,21 +28,34 @@
 }
 
 .pop-menu {
+  text-align: center;
   background: rgba($color: $black, $alpha: 1.0);
   backdrop-filter: blur(15px);
   display: none;
   height: 100vh;
   mix-blend-mode: multiply;
-  padding-top: 70px;
+  // padding-top: 70px;
   position: absolute;
   width: 100%;
   z-index: 2;
 }
 
+#menu-list {
+  display: flex;
+  flex-direction: column;
+  color: $white;
+}
+
+.close-button {
+  align-self: flex-end;
+  font-size: 46px;
+  list-style: none;
+  padding-right: 15px;
+}
+
 .pop-menu li a {
-  color: white;
+  color: $white;
   font-weight: 600;
   font-size: 46px;
   line-height: 110px;
-  padding-left: 20px;
 }
