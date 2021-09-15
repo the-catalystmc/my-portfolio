@@ -1,0 +1,36 @@
+.showcase::after {
+    content: '';
+    height: 50vh;
+    width: 100%;
+    background-image: url(https://image.ibb.co/gzOBup/showcase.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    transition: all 1000ms;
+  }
+
+  .showcase:hover::after {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+  }
+
+  .showcase:hover .content {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+  }
+
+  .content {
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    left: 50%;
+    margin-top: 105px;
+    margin-left: -145px;
+    width: 300px;
+    height: 350px;
+    text-align: center;
+    transition: all 1000ms;
+  }

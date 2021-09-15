@@ -1,5 +1,8 @@
+@import '../custom';
+
 .mobile-navbar {
   align-items: center;
+  background-color: $black;
   display: flex;
   justify-content: space-between;
   padding: 10px;
@@ -8,5 +11,5 @@
 
 .mobile-navbar a {
   text-decoration: none;
-  color: black;
+  color: $white;
 }

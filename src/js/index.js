@@ -1,17 +1,14 @@
-import _ from 'lodash';
 import '../scss/style.scss';
-// import 'bootstrap';
 
-
-function component() {
-    const element = document.createElement('div');
+// function component() {
+//     const element = document.createElement('div');
   
-    // Lodash, currently included via a script, is required for this line to work
-    // Lodash, now imported by this script
-    element.innerHTML = _.join(['Starter', 'Text'], ' ');
-    element.classList.add('hello');
+//     // Lodash, currently included via a script, is required for this line to work
+//     // Lodash, now imported by this script
+//     element.innerHTML = _.join(['Starter', 'Text'], ' ');
+//     element.classList.add('hello');
   
-    return element;
-  }
+//     return element;
+//   }
   
-  document.body.appendChild(component());
+//   document.body.appendChild(component());
