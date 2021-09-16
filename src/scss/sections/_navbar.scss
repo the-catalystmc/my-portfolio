@@ -1,6 +1,7 @@
 @import '../custom';
 
 .mobile-navbar {
+  position: fixed;
   align-items: center;
   background-color: $black;
   color: $white;
@@ -8,6 +9,7 @@
   justify-content: space-between;
   padding: 10px;
   width: 100%;
+  z-index: 5;
 }
 
 .mobile-navbar a {
@@ -34,7 +36,7 @@
   display: none;
   height: 100vh;
   mix-blend-mode: multiply;
-  // padding-top: 70px;
+  padding-top: 50px;
   position: absolute;
   width: 100%;
   z-index: 2;

@@ -1,0 +1,70 @@
+@import '../custom';
+
+.project {
+    background-color: $black;
+    padding: 10px 15px;
+  }
+  
+  .project__card {
+    background: #fff;
+    padding: 12px;
+    border-radius: 12px;
+  }
+  
+  .project__img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+
+  }
+  
+  .project__title {
+    font-size: 32px;
+    color: $black;
+    font-weight: 700;
+    margin: 5px 0;
+  }
+  
+  .project__quali {
+    display: flex;
+    align-items: center;
+  }
+  
+  .project__quali li {
+    font-size: 13px;
+    font-weight: 600;
+    color: #7a869a;
+    line-height: 16px;
+    // margin-right: 8px;
+  }
+  
+  .project__circle {
+    height: 6px;
+    width: 6px;
+    background: #7a7a7a;
+    border-radius: 50%;
+  }
+  
+  .project__desc {
+    font-size: 15px;
+    color: #344563;
+    line-height: 18px;
+    margin-bottom: 12px;
+  }
+  
+  .project__tech {
+    display: flex;
+    align-items: center;
+  }
+  
+  .project__tag {
+    padding: 4px 12px;
+    border-radius: 8px;
+    background: #ebebff;
+    // margin-right: 8px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #6070ff;
+  }
